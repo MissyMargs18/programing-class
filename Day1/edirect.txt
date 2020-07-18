@@ -1,0 +1,137 @@
+    1  pwd
+    2  ls
+    3  pwd
+    4  mkdir mydemo
+    5  ls
+    6  cp ~/Desktop/unix/human.vcf mydemo
+    7  cd mydemo/
+    8  pwd
+    9  ls -l
+   10  ls -lh
+   11  ls
+   12  command
+   13  man
+   14  man head
+   15  man ls
+   16  pwd
+   17  cp human.vcf towork.txt
+   18  ls
+   19  mv towork.txt variants.txt
+   20  ls
+   21  head variants.txt 
+   22  head -n 2 variants.txt 
+   23  head -n 10 variants.txt 
+   24  head -n 10 variants.txt > variants10.txt
+   25  ls
+   26  head variants10.txt 
+   27  ls -l
+   28  tail variants10.txt 
+   29  tail variants.txt 
+   30  ls
+   31  rm variants10.txt 
+   32  ls
+   33  more variants.txt 
+   34  less variants.txt 
+   35  grep A variants.txt 
+   36  grep -w A variants.txt 
+   37  ls -l
+   38  grep '\sA\s' variants.txt 
+   39  grep '\sA\sT\s' variants.txt 
+   40  grep '\sAT\s' variants.txt 
+   41  grep '\sAT\s' variants.txt  > at.txt
+   42  ls
+   43  head -n 1 at.txt 
+   44  head -n 2 at.txt 
+   45  wc variants.txt 
+   46  wc -l variants.txt 
+   47  wc -l at.txt 
+   48  grep '\sTA\s' variants.txt > ta.txt
+   49  ls
+   50  ls -lh
+   51  cat ta.txt 
+   52  cat ta.txt at.txt > taat.txt
+   53  ls
+   54* head t
+   55  tail taat.txt 
+   56  wc -l taat.txt 
+   57  wc -l *
+   58  nano f1.fasta
+   59  ls
+   60  cat f1.fasta 
+   61  wc -l variants.txt 
+   62  wc -l < variants.txt 
+   63  head -n 2 variants.txt > twolines
+   64  cat twolines 
+   65  head -n 2 variants.txt > twolines
+   66  cat twolines 
+   67  head -n 2 variants.txt >> twolines
+   68  cat twolines 
+   69  head -n 2 variants.txt >> twolines
+   70  cat twolines 
+   71  grep '\sAC\s' variants.txt | wc -l
+   72  grep '\sAC\s' variants.txt | grep -w S3D
+   73  grep '\sAC\s' variants.txt | grep -w 3Plus
+   74  grep '\sAC\s' variants.txt | grep 3Plus
+   75  grep '\sAC\s' variants.txt | grep 3Plus | grep -w PMC
+   76  grep '\sAC\s' variants.txt | grep 3Plus | wc -l
+   77  wget hgdownload.cse.ucsc.edu/goldenPath/hg38/database/ncbiRefSeq.txt.gz
+   78  ls 
+   79  ls -l
+   80  gunzip ncbiRefSeq.txt.gz 
+   81  ls -l
+   82  head ncbiRefSeq.txt 
+   83  gzip ncbiRefSeq.txt 
+   84  ls 
+   85  gunzip ncbiRefSeq.txt.gz 
+   86  history
+   87  history > hist.txt
+   88  ls
+   89  cd ~
+   90  cd mydemo/
+   91  apple=1
+   92  echo apple
+   93  echo $apple 
+   94  echo apple=2
+   95  echo $apple
+   96  apple=2
+   97  echo $apple
+   98  apple=banana
+   99  echo $apple
+  100  echo $SHELL
+  101  echo $HOME
+  102  cd $HOME
+  103  pwd
+  104  ls
+  105  cd mydemo/
+  106  cd ~
+  107  cd mydemo/
+  108  nano hello.sh
+  109  ls
+  110  hello.sh
+  111  ./hello.sh
+  112  ls -l
+  113  chmod 755 hello.sh
+  114  ls -l
+  115  ./hello.sh 
+  116  cd $HOME
+  117  ls -a 
+  118  cd mydemo/
+  119  nano hello.sh 
+  120  ./hello.sh 
+  121  nano hello.sh 
+  122  ./hello.sh 
+  123  nano hello.sh 
+  124  ./hello.sh 
+  125  echo $HELLO
+  126  nano hello.sh 
+  127  ./hello.sh 
+  128  nano hello.sh 
+  129  ./hello.sh 
+  130  cd ~
+  131  history > ~/Desktop/history_71420.txt
+  132  history
+  133  cat ~./.bashrc
+  134  cat ~/.bashrc
+  135  nano ~/.bashrc
+  136  history > edirect.txt
+  137  history > ~/Desktop/edirect.txt

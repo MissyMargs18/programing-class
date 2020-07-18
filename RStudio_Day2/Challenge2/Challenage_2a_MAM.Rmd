@@ -1,0 +1,24 @@
+---
+title: "Challenage_2a"
+author: "MAM"
+date: "7/15/2020"
+always_allow_html: true
+output:
+  pdf_document: default
+  html_document: default
+---
+
+
+#```{r setup, include=FALSE}
+#knitr::opts_chunk$set(echo = TRUE)
+#```
+
+```{r}
+trpv1 <- read.delim("~/Desktop/trpv1.tsv")
+df_1 = subset(trpv1, trpv1$X0.999 < 0.5)
+tab = df_1
+
+library(DT)
+datatable(tab, colnames = names(tab), options = list(scrollX = FALSE, 
+  keys = TRUE, pageLength = 10), caption = paste("Table 1"), rownames = TRUE)
+```

@@ -1,0 +1,28 @@
+---
+title: "Analysis Example"
+author: "MAM"
+date: "7/15/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+load("~/Desktop/r/example_data.RData")
+tab = dat_chol
+```
+
+```{r}
+library(DT)
+datatable(tab, colnames = names(tab), options = list(scrollX = FALSE, 
+  keys = TRUE, pageLength = 10), caption = paste("Table 1"), rownames = TRUE)
+```
+
+#```{r} 
+#dat = dat_wide2
+#cormat = cor(dat)
+#library(heatmaply)
+#heatmaply(cormat, cexRow = 0.5, cexCol = 0.5)
+#```

@@ -1,0 +1,205 @@
+    1  pwd
+    2  ls
+    3  pwd
+    4  mkdir mydemo
+    5  ls
+    6  cp ~/Desktop/unix/human.vcf mydemo
+    7  cd mydemo/
+    8  pwd
+    9  ls -l
+   10  ls -lh
+   11  ls
+   12  command
+   13  man
+   14  man head
+   15  man ls
+   16  pwd
+   17  cp human.vcf towork.txt
+   18  ls
+   19  mv towork.txt variants.txt
+   20  ls
+   21  head variants.txt 
+   22  head -n 2 variants.txt 
+   23  head -n 10 variants.txt 
+   24  head -n 10 variants.txt > variants10.txt
+   25  ls
+   26  head variants10.txt 
+   27  ls -l
+   28  tail variants10.txt 
+   29  tail variants.txt 
+   30  ls
+   31  rm variants10.txt 
+   32  ls
+   33  more variants.txt 
+   34  less variants.txt 
+   35  grep A variants.txt 
+   36  grep -w A variants.txt 
+   37  ls -l
+   38  grep '\sA\s' variants.txt 
+   39  grep '\sA\sT\s' variants.txt 
+   40  grep '\sAT\s' variants.txt 
+   41  grep '\sAT\s' variants.txt  > at.txt
+   42  ls
+   43  head -n 1 at.txt 
+   44  head -n 2 at.txt 
+   45  wc variants.txt 
+   46  wc -l variants.txt 
+   47  wc -l at.txt 
+   48  grep '\sTA\s' variants.txt > ta.txt
+   49  ls
+   50  ls -lh
+   51  cat ta.txt 
+   52  cat ta.txt at.txt > taat.txt
+   53  ls
+   54  head t
+   55  tail taat.txt 
+   56  wc -l taat.txt 
+   57  wc -l *
+   58  nano f1.fasta
+   59  ls
+   60  cat f1.fasta 
+   61  wc -l variants.txt 
+   62  wc -l < variants.txt 
+   63  head -n 2 variants.txt > twolines
+   64  cat twolines 
+   65  head -n 2 variants.txt > twolines
+   66  cat twolines 
+   67  head -n 2 variants.txt >> twolines
+   68  cat twolines 
+   69  head -n 2 variants.txt >> twolines
+   70  cat twolines 
+   71  grep '\sAC\s' variants.txt | wc -l
+   72  grep '\sAC\s' variants.txt | grep -w S3D
+   73  grep '\sAC\s' variants.txt | grep -w 3Plus
+   74  grep '\sAC\s' variants.txt | grep 3Plus
+   75  grep '\sAC\s' variants.txt | grep 3Plus | grep -w PMC
+   76  grep '\sAC\s' variants.txt | grep 3Plus | wc -l
+   77  wget hgdownload.cse.ucsc.edu/goldenPath/hg38/database/ncbiRefSeq.txt.gz
+   78  ls 
+   79  ls -l
+   80  gunzip ncbiRefSeq.txt.gz 
+   81  ls -l
+   82  head ncbiRefSeq.txt 
+   83  gzip ncbiRefSeq.txt 
+   84  ls 
+   85  gunzip ncbiRefSeq.txt.gz 
+   86  history
+   87  history > hist.txt
+   88  ls
+   89  cd ~
+   90  cd mydemo/
+   91  apple=1
+   92  echo apple
+   93  echo $apple 
+   94  echo apple=2
+   95  echo $apple
+   96  apple=2
+   97  echo $apple
+   98  apple=banana
+   99  echo $apple
+  100  echo $SHELL
+  101  echo $HOME
+  102  cd $HOME
+  103  pwd
+  104  ls
+  105  cd mydemo/
+  106  cd ~
+  107  cd mydemo/
+  108  nano hello.sh
+  109  ls
+  110  hello.sh
+  111  ./hello.sh
+  112  ls -l
+  113  chmod 755 hello.sh
+  114  ls -l
+  115  ./hello.sh 
+  116  cd $HOME
+  117  ls -a 
+  118  cd mydemo/
+  119  nano hello.sh 
+  120  ./hello.sh 
+  121  nano hello.sh 
+  122  ./hello.sh 
+  123  nano hello.sh 
+  124  ./hello.sh 
+  125  echo $HELLO
+  126  nano hello.sh 
+  127  ./hello.sh 
+  128  nano hello.sh 
+  129  ./hello.sh 
+  130  cd ~
+  131  history > ~/Desktop/history_71420.txt
+  132  history
+  133  cat ~./.bashrc
+  134  cat ~/.bashrc
+  135  nano ~/.bashrc
+  136  history > edirect.txt
+  137  history > ~/Desktop/edirect.txt
+  138  ./hello.sh 
+  139  cd mydemo/
+  140  ./hello.sh 
+  141  vi hello.sh 
+  142  which pdflatex
+  143  pwd
+  144  cd Downloads/
+  145  ls
+  146  mv ./trpv1.tsv ~/Desktop/
+  147  cd ~/Desktop/
+  148  ls
+  149  esearch -db pubmed -query "motb"
+  150  cd ~/Desktop/
+  151  head challenage_2a.RData 
+  152  sudo tlmgr install framed
+  153  tlmgr
+  154  apt-get
+  155  apt-get install framed
+  156  ls
+  157  ls -la
+  158  pws
+  159  pwd
+  160  cd ~/Desktop/
+  161  mkdir RStudio_Day2
+  162  ls
+  163  mv -r challenage_2a.RData Challenage_2a_MAM.Rmd Challenage_2a_MAM.html Challenage_2a_MAM.log Challenage_2a_MAM.pdf Challenage_2a_MAM.tex trpv1.tsv ./RStudio_Day2/
+  164  mv challenage_2a.RData Challenage_2a_MAM.Rmd Challenage_2a_MAM.html Challenage_2a_MAM.log Challenage_2a_MAM.pdf Challenage_2a_MAM.tex trpv1.tsv ./RStudio_Day2/
+  165  ls
+  166  cd RStudio_Day2/
+  167  ls
+  168  mkdir Challenge2
+  169  ls
+  170  mv Challenage_2a_MAM.Rmd Challenage_2a_MAM.html Challenage_2a_MAM.log Challenage_2a_MAM.pdf Challenage_2a_MAM.tex challenage_2a.RData trpv1.tsv ./Challenge2/
+  171  cd ~/Desktop/
+  172  ls
+  173  cd ~/Desktop/RStudio_Day2/
+  174  ls
+  175  mkdir R_session
+  176  ls
+  177  cd ~/Desktop/
+  178  ls
+  179  mv 'Vector sessionR.Rhistory' download.png interaction-data-process-script.r markdown_sample.Rmd markdown_sample.html 'matrix R session.Rhistory' session1R.RData session1R.Rhistory statsmallnew.png statsmallnewfiltered.txt  ~/Desktop/RStudio_Day2/R_session/
+  180  ls
+  181  mkdir Day1
+  182  ls
+  183  jupyter lab
+  184  pwd
+  185  ls
+  186  ls Hello.pl 
+  187  cp Hello.pl ./hello.pl
+  188  ls
+  189  rm hello.pl 
+  190  ls
+  191  la Hello.pl 
+  192  ls Hello.pl 
+  193  perl Hello.pl 
+  194  clear
+  195  perl NCBIids.pl
+  196  perl Pubmedsearch.pl
+  197  head Pubmedsearch.pl 
+  198  perl Pubmedsearch.pl
+  199  php hello.php 
+  200  history > History_Day4.txt
+  201  cd Desktop/
+  202  ls
+  203  history > History_Day4.txt
+  204  ls
+  205  history > History_Day4
